@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinatorLayout"
+    android:fitsSystemWindows="true">
+
+    <View
+        android:fitsSystemWindows="true"
+        android:background="@color/activityBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:id="@+id/scrim"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="98dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardBackgroundColor="#FFF"
+            app:cardCornerRadius="2dp">
+        </android.support.v7.widget.CardView>
+
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        app:backgroundTint="#FFF"
+        app:elevation="1dp"
+        android:layout_margin="16dp"
+        app:layout_behavior="com.fish4fun.likegooglemaps.fab.CustomFABBehavior"
+        app:srcCompat="@drawable/ic_android_24dp" />
+
+    <com.fish4fun.likegooglemaps.bottomsheet.CustomBottomSheet
+        android:id="@+id/bottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:cbs_header_layout="@layout/bottomsheet_header"
+        app:cbs_behavior_hideable="false"
+        app:cbs_behavior_peekHeight="header"
+        app:cbs_behavior_topOffset = "92dp"
+        app:cbs_behavior_snap="true"
+        app:layout_behavior="com.fish4fun.likegooglemaps.bottomsheet.CustomBottomSheetBehavior"/>
+
+    <View
+        android:layout_gravity="bottom"
+        android:background="#33777777"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</android.support.design.widget.CoordinatorLayout>

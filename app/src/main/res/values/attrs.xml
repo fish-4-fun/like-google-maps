@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomBottomSheetBehavior">
+        <attr name="cbs_behavior_hideable" format="boolean"/>
+        <attr name="cbs_behavior_snap" format="boolean"/>
+        <attr name="cbs_behavior_topOffset" format="dimension"/>
+        <attr name="cbs_behavior_peekHeight" format="dimension">
+            <flag name="none" value="0" />
+            <flag name="auto" value="-1"/>
+            <flag name="header" value="-2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomBottomSheet">
+        <attr name="cbs_header_layout" format="reference"/>
+    </declare-styleable>
+</resources>
