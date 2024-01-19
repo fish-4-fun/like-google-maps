@@ -1,5 +1,7 @@
 # like-google-maps
 
+## DEPRECATED.
+
 Proof of concept; Google Maps like bottomsheet behavior
 
 ### What this project is
